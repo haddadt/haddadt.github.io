@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: white; 
+    line-height: 1.6;
+}
+
+/* Large Header with Image and About Section */
+header {
+    height: 90vh; 
+    background: #00171F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about {
+    max-width: 600px;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    margin: 0.5rem 0;
+}
+
+/* Sticky Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 15px;
+    color: hsl(195, 100%, 25%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: hsl(195, 100%, 10%);
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+section a {
+    color: hsl(218, 100%, 50%);
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+section a:hover {
+    color: hsl(218, 100%, 35%);
+    text-decoration: underline;
+}
+
+section#research {
+    background-color: #C0EDC3;
+}
+
+section#teaching {
+    background-color: #B9F4D8; 
+}
+
+section#talks {
+    background-color: #C0EDC3; 
+}
+
+/* Lists */
+ul.space_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.space_list li {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header and nav vertically on small screens */
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px;
+    }
+
+    section {
+        margin: 80px auto 20px auto; /* Adjust margin for smaller screens */
+        padding: 10px;
+    }
+
+    section#research, section#teaching, section#talks {
+        padding: 15px; /* Reduce padding for sections */
+    }
+}
