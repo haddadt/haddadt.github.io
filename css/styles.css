@@ -1,3 +1,13 @@
+/* CSS Variables */
+:root {
+    --primary-color: #6b0101;
+    --hover-color: #006B8F;
+    --text-color: #fff;
+    --background-color: #00171F;
+    --research-bg: #C0EDC3;
+    --talks-bg: #B9F4D8;
+}
+
 /* General Reset */
 * {
     margin: 0;
@@ -5,28 +15,30 @@
     box-sizing: border-box;
 }
 
+/* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
 
+/* Body Styles */
 body {
     font-family: 'Lato', sans-serif;
     background-color: white; 
     line-height: 1.6;
 }
 
-/* Large Header with Image and About Section */
+/* Header styles */
 header {
     height: 90vh; 
-    background: #00171F;
-    color: white;
+    background: var(--background-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
 }
 
-.header-content {
+.header-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,13 +46,7 @@ header {
     max-width: 1200px;
 }
 
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
+/* About Section Style */
 .about {
     max-width: 600px;
 }
@@ -54,7 +60,25 @@ header img {
     margin: 0.5rem 0;
 }
 
-/* Sticky Navigation Bar */
+/* Image Styles */
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Button Styles */
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+/* Navigation Styles */
 nav {
     position: sticky;
     top: 0;
@@ -97,15 +121,11 @@ section a:hover {
 }
 
 section#research {
-    background-color: #C0EDC3;
-}
-
-section#teaching {
-    background-color: #B9F4D8; 
+    background-color: var(--research-bg);
 }
 
 section#talks {
-    background-color: #C0EDC3; 
+    background-color: var(--talks-bg); 
 }
 
 /* Lists */
@@ -122,29 +142,26 @@ ul.space_list li {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
+    font-size: 0.8em;
+    background-color: var(--background-color);
     color: white;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack header and nav vertically on small screens */
+        flex-direction: column; 
         align-items: center;
         padding: 1rem;
     }
 
     nav {
-        flex-direction: column; /* Stack nav items vertically */
+        flex-direction: column; 
         gap: 10px;
     }
 
     section {
-        margin: 80px auto 20px auto; /* Adjust margin for smaller screens */
+        margin: 80px auto 20px auto;
         padding: 10px;
-    }
-
-    section#research, section#teaching, section#talks {
-        padding: 15px; /* Reduce padding for sections */
     }
 }
