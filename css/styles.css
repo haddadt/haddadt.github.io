@@ -4,8 +4,12 @@
     --hover-color: #006B8F;
     --text-color: #fff;
     --background-color: #00171F;
-    --research-bg: #C0EDC3;
-    --talks-bg: #B9F4D8;
+    --bg-sec1: hsl(160, 56%, 84%);
+    --bg-sec2: hsl(120, 56%, 84%);
+    --bg-sec3: hsl(60, 56%, 84%);
+    --bg-sec4: hsl(40, 56%, 84%);
+    --research-bg: hsl(124, 56%, 84%);
+    --talks-bg: hsl(152, 73%, 84%);
 }
 
 /* General Reset */
@@ -107,6 +111,7 @@ section {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    scroll-margin-top: 70px;
 }
 
 section a {
@@ -121,12 +126,21 @@ section a:hover {
 }
 
 section#research {
-    background-color: var(--research-bg);
+    background-color: var(--bg-sec1);
 }
 
 section#talks {
-    background-color: var(--talks-bg); 
+    background-color: var(--bg-sec2); 
 }
+
+section#teaching {
+    background-color: var(--bg-sec3); 
+}
+
+section#contact {
+    background-color: var(--bg-sec4); 
+}
+
 
 /* Lists */
 ul.space_list {
