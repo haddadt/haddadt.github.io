@@ -3,11 +3,11 @@
     --primary-color: #6b0101;
     --hover-color: #006B8F;
     --text-color: #fff;
-    --background-color: #00171F;
-    --bg-sec1: hsl(160, 56%, 84%);
-    --bg-sec2: hsl(120, 56%, 84%);
-    --bg-sec3: hsl(60, 56%, 84%);
-    --bg-sec4: hsl(40, 56%, 84%);
+    --background-color: hwb(195 0% 88%);
+    --bg-sec1: hsl(200, 60%, 90%);
+    --bg-sec2: hsl(185, 60%, 90%);
+    --bg-sec3: hsl(200, 60%, 90%);
+    --bg-sec4: hsl(185, 60%, 90%);
     --research-bg: hsl(124, 56%, 84%);
     --talks-bg: hsl(152, 73%, 84%);
 }
@@ -168,28 +168,23 @@ footer {
         align-items: center;
         padding: 1rem;
     }
-
-    /*nav {
-        flex-direction: column; 
-        gap: 10px;
-    }*/
     
     nav {
         display: flex;
         flex-direction: row;
         gap: 5px;
         flex-wrap: nowrap;
-        justify-content: space-between; /* Space items evenly */
-        width: 100%;                   /* Ensure nav bar uses full width */
-        overflow-x: auto;               /* Add scroll if needed */
+        justify-content: space-between;
+        width: 100%;
+        overflow-x: auto;            
     }
 
     nav a {
-        flex-shrink: 1;                 /* Allow items to shrink */
-        min-width: 50px;                /* Minimum width for each item */
+        flex-shrink: 1;
+        min-width: 50px;
         text-align: center;
-        font-size: 0.85rem;             /* Adjust font size if needed */
-        padding: 0.3rem 0.5rem;         /* Minimize padding */
+        font-size: 0.85rem;
+        padding: 0.3rem 0.5rem;
     }
 
     section {
