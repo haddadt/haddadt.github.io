@@ -4,10 +4,10 @@
     --hover-color: #006B8F;
     --text-color: #fff;
     --background-color: hwb(195 0% 88%);
-    --bg-sec1: hsl(200, 60%, 90%);
-    --bg-sec2: hsl(185, 60%, 90%);
+    --bg-sec1: hsl(140, 60%, 90%);
+    --bg-sec2: hsl(170, 60%, 90%);
     --bg-sec3: hsl(200, 60%, 90%);
-    --bg-sec4: hsl(185, 60%, 90%);
+    --bg-sec4: hsl(220, 60%, 90%);
     --research-bg: hsl(124, 56%, 84%);
     --talks-bg: hsl(152, 73%, 84%);
 }
